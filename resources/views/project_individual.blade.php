@@ -15,7 +15,7 @@
 
 @section('main')
     <input type="hidden" id="user" value="{{$user}}">
-    {{-- 헤더 --}}
+    {{-- 헤더 test--}}
     <div class="first_menu">
         {{-- <div class="menu_title"> --}}
             <div class="title_bar">
