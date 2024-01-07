@@ -1,0 +1,1110 @@
+.task_modal * {
+	/* 배치 */
+	/* 내부 */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* 크기 */
+}
+
+.insert_task_modal {
+	border-radius: 7px;
+}
+
+/* 모달 위치 테스트 ~ */
+.insert_modal {
+	/* 배치 */
+	position: absolute;
+	top: 6.3%;
+	right: 30%;
+	z-index: 3;
+	/* 내부 */
+	border-radius: 14px;
+	box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.6);
+	/* 크기 */
+	height: 87%;
+}
+
+.detail_modal {
+	/* 배치 */
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	/* 내부 */
+	border-radius: 14px 0 0 14px;
+	box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.6);
+	/* 크기 */
+	height: 100%;
+}
+
+.behind_insert_modal {
+	/* 배치 */
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	/* 내부 */
+	backdrop-filter: blur(100px);
+	background: var(--scrollbar-bg);
+	/* 크기 */
+	width: 100%;
+	height: 100%;
+}
+
+/* ~ */
+
+.task_modal {
+	/* 배치 */
+	position: absolute;
+	/* 내부 */
+	background-color: #181818;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* 크기 */
+	width: 460px;
+	/* height: 645px; */
+}
+
+.task_modal>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	/* 크기 */
+	width: 100%;
+	height: 8%;
+}
+
+.task_modal>div:nth-child(3) {
+	/* 배치 */
+	/* 내부 */
+	/* 크기 */
+	width: 100%;
+	height: 10%;
+}
+
+.task_modal>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* 크기 */
+}
+
+.task_modal>div:nth-child(2) {
+	/* 배치 */
+
+	/* 내부 */
+	overflow: auto;
+	/* 크기 */
+	height: 82%;
+}
+
+.task_modal>div:nth-child(2):not(.noline) {
+	/* 배치 */
+	/* 내부 */
+	border-bottom: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color);
+	/* 크기 */
+	width: 100%;
+}
+
+/* 스크롤 */
+.task_modal>div:nth-child(2)::-webkit-scrollbar {
+	width: 10px;
+}
+
+.task_modal>div:nth-child(2)::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-bg);
+	border-radius: 27px;
+}
+
+.task_modal>div:nth-child(2)::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.task_modal .insert_content::-webkit-scrollbar {
+	width: 10px;
+}
+
+.task_modal .insert_content::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-bg);
+	border-radius: 27px;
+}
+
+.task_modal .insert_content::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.task_modal>div:nth-child(2)>.content:not(.noline) {
+	/* 배치 */
+	/* 내부 */
+	/* border-bottom: 1px solid var(--border-color); */
+	padding-top: 10px;
+	/* 크기 */
+}
+
+.task_modal .overheader {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	padding: 0 25px 10px;
+	font-size: small;
+	color: rgb(255, 255, 255, 0.7);
+	/* 크기 */
+}
+
+.detail_task_modal .overheader {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	padding: 10px 25px;
+	font-size: small;
+	color: rgb(255, 255, 255, 0.7);
+	/* 크기 */
+}
+
+.task_modal .overheader>div:nth-child(2) {
+	/* 배치 */
+	margin-left: 10px;
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .task_modal>.header {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* 크기 */
+}
+
+.task_modal>.header>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	align-items: center;
+	/* 크기 */
+}
+
+.task_modal>.header>div:nth-child(2) {
+	/* 배치 */
+	/* 내부 */
+	/* 크기 */
+	width: 20px;
+	height: 20px;
+}
+
+.task_modal .vertical_line {
+	/* 배치 */
+	margin-left: 5px;
+	margin-bottom: 4px;
+	/* 내부 */
+	font-size: 20px;
+	font-weight: normal;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .insert_type {
+	/* 배치 */
+	margin-left: 5px;
+	/* 내부 */
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .cross_icon_b {
+	background-image: url('/img/free-icon-x-mark-12139978.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.task_modal .cross_icon_w {
+	background-image: url('/img/free-icon-x-mark-12139978-1.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.task_modal>.header>div:nth-child(1)>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	background-color: transparent;
+	/* 크기 */
+	width: 20px;
+	height: 20px;
+}
+
+.task_modal>.header>div:nth-child(1)>div:nth-child(2) {
+	/* 배치 */
+	margin-left: 15px;
+	/* 내부 */
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+	/* 크기 */
+}
+
+.task_modal .content .header .more {
+	/* 배치 */
+	/* 내부 */
+	position: relative;
+	font-size: 13px;
+	font-weight: 300;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .content .header .more .more_modal {
+	/* 배치 */
+	position: absolute;
+	right: 0;
+	top: 24px;
+	/* 내부 */
+	background-color: #181818;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	border: 1px solid var(--border-color);
+	border-radius: 5px;
+	/* 크기 */
+	width: 90px;
+	height: 65px;
+}
+
+.task_modal .content .header .more .more_modal>div {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	/* 크기 */
+}
+
+.task_modal .update_icon {
+	/* 배치 */
+	margin-right: 7px;
+	/* 내부 */
+	background-image: url('/img/free-icon-google-docs-2991112-1.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	width: 20px;
+	height: 20px;
+}
+
+.task_modal .delete_icon {
+	/* 배치 */
+	margin-right: 7px;
+	/* 내부 */
+	background-image: url('/img/free-icon-recycle-bin-7491835-2.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	width: 20px;
+	height: 20px;
+}
+
+.task_modal .content>.header {
+	/* 배치 */
+	padding: 0 28px;
+	/* 내부 */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* 크기 */
+}
+
+.task_modal .content>.header>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	align-items: center;
+	/* 크기 */
+}
+
+.task_modal .content>.header>div:nth-child(1)>div {
+	/* 배치 */
+	margin-right: 10px;
+	/* 내부 */
+	font-size: 22px;
+	font-weight: normal;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .content>.header>div:nth-child(1)>div:nth-child(3) {
+	/* 배치 */
+	margin-right: 10px;
+	margin-top: 7px;
+	/* 내부 */
+	font-size: 14px;
+	font-weight: lighter;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .user_profile {
+	/* 배치 */
+	/* 내부 */
+	background-image: url('/img/profile-img.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	width: 45px;
+	height: 45px;
+}
+
+.task_modal .more {
+	/* 배치 */
+	margin-right: 5px;
+	/* 내부 */
+
+	background-image: url(/img/free-icon-more-information-7151956-1.png);
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	width: 12px;
+	height: 22px;
+}
+
+.task_modal .content>.property {
+	/* 배치 */
+	/* 내부 */
+	padding: 15px 30px 0;
+	/* 크기 */
+}
+
+.task_modal .content>.property>div {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 12px;
+	/* 크기 */
+}
+
+.task_modal .content>.property>div:not(:nth-child(1)) {
+	/* 배치 */
+	margin-top: 5px;
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .content>.property>div>div:nth-child(1) {
+	/* 배치 */
+	margin-right: 8px;
+	/* 내부 */
+	/* 크기 */
+	width: 30px;
+	height: 30px;
+}
+
+.task_modal .content>.property>.status>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	background-image: url('/img/free-icon-history-8138197-1.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	scale: 0.9;
+}
+
+.task_modal .content>.property>.responsible>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	background-image: url('/img/free-icon-person-2815428-1.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	scale: 1.2;
+}
+
+.task_modal .content>.property>.dead_line>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	background-image: url('/img/free-icon-calendar-days-10178999-1.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	scale: 0.9;
+}
+
+.task_modal .content>.property>.priority>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	background-image: url('/img/free-icon-flag-2107994-1.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+	scale: 0.8;
+}
+
+.task_modal .content>.property>div>div:not(:nth-child(1)) {
+	/* 배치 */
+	margin-left: 5px;
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .content>.property>.status>div:not(:nth-child(1)) {
+	/* 배치 */
+	margin-left: 5px;
+	/* 내부 */
+	background-color: var(--m-btn);
+	text-align: center;
+	padding: 1%;
+	/* 크기 */
+	width: 70px;
+	height: 100%;
+	border-radius: 27px;
+}
+
+.task_modal .status #checked {
+	/* 배치 */
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .content>.property>.add_box>div:nth-child(2) {
+	/* 배치 */
+	/* 내부 */
+	/* display: flex; */
+	/* padding: 1%; */
+	/* 크기 */
+	/* border-radius: 7px; */
+}
+
+.task_modal .content>.property>.add_box>div:nth-child(2) {
+	/* :not(.priority) 뺌 231219*/
+	/* 배치 */
+	/* 내부 */
+	/* background-color: var(--m-btn); */
+	/* 크기 */
+}
+
+.task_modal .content>.property>.add_box>div:nth-child(2)>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	scale: 0.8;
+	/* 크기 */
+	width: 20px;
+	height: 20px;
+}
+
+.task_modal .content>.property>.add_box>div:nth-child(2)>div:nth-child(2) {
+	/* 배치 */
+	margin: 2px 5px 0;
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .content>.property>.add_box:not(.responsible)>div:nth-child(2)>div:nth-child(2) {
+	/* 배치 */
+	/* 내부 */
+	font-size: 13px;
+	font-weight: 300;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .priority_icon {
+	/* 배치 */
+	/* 내부 */
+	background-image: url('/img/free-icon-flag-2107994-1.png');
+	background-position: center;
+	background-size: cover;
+	/* 크기 */
+}
+
+.task_modal .content>.property>.add_box>div:nth-child(2)>div:nth-child(3) {
+	/* 배치 */
+	/* 내부 */
+	scale: 0.55;
+	/* 크기 */
+	width: 20px;
+	height: 20px;
+}
+
+.task_modal .content>.property>.responsible>div:nth-child(3) {
+	/* 배치 */
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .content>.property>.dead_line>input {
+	/* 배치 */
+	margin: 0 10px;
+	/* 내부 */
+	color: white;
+	/* 크기 */
+	width: 20%;
+}
+
+.task_modal .content>.property>.dead_line>input::placeholder {
+	/* 배치 */
+	/* 내부 */
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .content>.property>.dead_line>p {
+	/* 배치 */
+	/* 내부 */
+	font-size: medium;
+	font-weight: bold;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .add_box_mgin {
+	/* 배치 */
+	/* 내부 */
+	font-size: small;
+	color: white;
+	border-bottom: 1px solid white;
+	font-size: 13px;
+	/* 크기 */
+}
+
+.task_modal .content>.title {
+	/* 배치 */
+	/* 내부 */
+	padding: 15px 30px;
+	/* 크기 */
+}
+
+.task_modal .content>.insert_title {
+	/* 배치 */
+	margin-left: 20px;
+	/* 내부 */
+	padding: 15px 10px;
+	font-size: 17px;
+	font-weight: 600;
+	color: white;
+	/* 크기 */
+	width: 90%;
+}
+
+.task_modal .content>.insert_content {
+	/* 배치 */
+	margin-left: 20px;
+	/* 내부 */
+	padding: 15px 10px;
+	font-size: 14.8px;
+	font-weight: lighter;
+	color: rgb(255, 255, 255, 0.9);
+	/* 크기 */
+	width: 90%;
+}
+
+.task_modal .content>.insert_content::placeholder,
+.task_modal .content>.insert_title::placeholder {
+	/* 배치 */
+	/* 내부 */
+	color: white;
+	/* 크기 */
+}
+
+/* .task_modal .content>.insert_title:focus { */
+/* 배치 */
+/* 내부 */
+/* 크기 */
+/* } */
+
+.task_modal .content:not(.noline)>.title {
+	/* 배치 */
+	/* 내부 */
+	border-bottom: 1px solid var(--border-color);
+	color: white;
+	font-size: 17px;
+	font-weight: 600;
+	/* 크기 */
+}
+
+.task_modal .content>.content {
+	/* 배치 */
+	/* 내부 */
+	padding: 15px 28px;
+	font-size: 14.8px;
+	font-weight: lighter;
+	color: rgb(255, 255, 255, 0.9);
+	/* 크기 */
+}
+
+.task_modal .comment_start {
+	/* 배치 */
+	margin: 0 34px;
+	/* 내부 */
+	display: flex;
+	justify-content: end;
+	font-size: 13px;
+	/* 크기 */
+}
+
+.task_modal .content>.insert_content {
+	/* 배치 */
+	margin: 15px 0 0 20px;
+	/* 내부 */
+	background-color: transparent;
+	resize: none;
+	/* 크기 */
+	width: 90%;
+	height: 280px;
+}
+
+.task_modal .comment {
+	/* 배치 */
+	margin-top: 13px;
+	/* 내부 */
+	background-color: var(--m-request-bg);
+	padding: 20px;
+	/* 크기 */
+}
+
+.task_modal .comment>div {
+	/* 배치 */
+	/* 내부 */
+
+	padding: 15px 0;
+	/* 크기 */
+}
+
+.task_modal .comment>div:not(:last-child) {
+	/* 배치 */
+	/* 내부 */
+	border-bottom: 1px solid var(--border-color);
+	/* 크기 */
+}
+
+.task_modal .comment>div {
+	/* 배치 */
+	/* 내부 */
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+	/* justify-content: space-between; */
+	/* 크기 */
+}
+
+.task_modal .comment>div>.comment_content .delete_comment {
+	/* 배치 */
+	margin-right: 11px;
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .update_comment {
+	/* 배치 */
+	position: absolute;
+	right: 43px;
+	/* 내부 */
+	/* 크기 */
+}
+
+.task_modal .comment>div>.comment_content>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	/* 크기 */
+}
+
+.task_modal .comment>div>.comment_content>div:nth-child(1)>div:nth-child(1) {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	/* 크기 */
+}
+
+.task_modal .comment>div>.user_profile {
+	/* 배치 */
+	/* 내부 */
+	/* 크기 */
+	width: 45px;
+	height: 45px;
+}
+
+.task_modal .comment>div>.comment_content>div:nth-child(2) {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	/* 크기 */
+	/* width: 100%; */
+}
+
+.task_modal .comment .comment_content {
+	/* 배치 */
+	margin: 0 0;
+	/* 내부 */
+	font-size: 13px;
+	font-weight: normal;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .comment .comment_content .user_name {
+	/* 배치 */
+	margin: 0 0;
+	/* 내부 */
+	font-size: 17px;
+	font-weight: bold;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .comment .comment_content .comment_date {
+	/* 배치 */
+	margin: 5px;
+	/* 내부 */
+	font-size: 13px;
+	font-weight: lighter;
+	color: white;
+	/* 크기 */
+}
+
+.task_modal .comment .comment_content .comment_line {
+	/* 배치 */
+	margin: 0 11px 0 0;
+	/* 내부 */
+	font-size: 12.5px;
+	font-weight: lighter;
+	color: white;
+	/* 크기 */
+}
+
+
+
+.task_modal .footer {
+	/* 배치 */
+	/* 내부 */
+	display: grid;
+	grid-template-columns: 1fr 4.5fr 1.5fr;
+	justify-items: center;
+	align-items: center;
+	/* 크기 */
+}
+
+.task_modal .footer>textarea {
+	/* 배치 */
+	/* 내부 */
+	padding: 8px 12px;
+	resize: none;
+	border: 1px solid var(--border-color);
+	background-color: var(--scrollbar-bg);
+	border-radius: 5px;
+	/* 크기 */
+	width: 100%;
+	height: 53%;
+}
+
+.task_modal .footer>textarea::placeholder {
+	/* 배치 */
+	/* 내부 */
+	color: #BBBBBB;
+	/* 크기 */
+}
+
+.add_property_modal::-webkit-scrollbar {
+	height: 0;
+}
+
+.add_property_modal::-webkit-scrollbar-track {
+	background-color: var(--popup-bg);
+}
+
+.add_responsible_modal {
+	opacity: 100%;
+}
+
+/* .task_modal .footer>textarea:focus { */
+/* 배치 */
+/* 내부 */
+/* 크기 */
+/* } */
+
+.task_modal .footer>div:nth-child(3) {
+	/* 배치 */
+	/* 내부 */
+	background-color: var(--m-btn);
+	/* 크기 */
+	width: 75%;
+	height: 53%;
+}
+
+.task_modal .footer .submit {
+	/* 배치 */
+	/* 내부 */
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 5px;
+	/* 크기 */
+}
+
+.task_modal .insert_footer {
+	/* 배치 */
+	/* 내부 */
+	padding: 10px 20px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	/* 크기 */
+}
+
+.task_modal .insert_footer>div {
+	/* 배치 */
+	/* 내부 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--m-btn);
+	font-size: 14px;
+	color: white;
+	/* 크기 */
+	width: 25%;
+	height: 80%;
+	border-radius: 14px;
+}
+
+/* 오류 처리 */
+.task_modal .status {
+	width: 100%;
+}
+
+/* 모달 내부처리 */
+/* .task_modal { */
+/* display: none; */
+/* position: absolute; */
+/* } */
+
+.responsible,
+.priority {
+	position: relative;
+}
+
+.add_responsible_modal {
+	/* 배치 */
+	position: absolute;
+	top: 32px;
+	left: 39px;
+	z-index: 5;
+	/* 내부 */
+	background-color: var(--dropdown-hover);
+	overflow: scroll;
+	border-radius: 5px;
+	/* 크기 */
+	width: 140px;
+	min-height: 28px;
+	max-height: 100px;
+}
+
+.add_priority_modal {
+	/* 배치 */
+	position: absolute;
+	top: 31px;
+	left: 39px;
+	z-index: 5;
+	/* 내부 */
+	background-color: var(--dropdown-hover);
+	overflow: scroll;
+	border-radius: 5px;
+	/* 크기 */
+	width: 86px;
+	min-height: 28px;
+	max-height: 100px;
+}
+
+.add_responsible_modal_one,
+.add_priority_modal_one {
+	display: flex;
+	padding: 5px 0;
+}
+
+.add_responsible_modal_one:hover,
+.add_priority_modal_one:hover {
+	background-color: rgba(12, 12, 12, 0.829);
+}
+
+.priority_one,
+.responsible_one {
+	background-color: var(--m-btn);
+	display: flex;
+	padding: 1%;
+	border-radius: 7px;
+}
+
+.add_responsible_modal_one_icon {
+	background-image: url('/img/profile-img.png');
+	background-position: center;
+	background-size: cover;
+
+	width: 18px;
+	height: 18px;
+	margin: 0px 5px;
+}
+
+.add_priority_modal_one_icon {
+	/* background-image: url('/img/profile-img.png'); */
+	background-position: center;
+	background-size: cover;
+
+	width: 18px;
+	height: 20px;
+	margin: 0px 5px;
+}
+
+/* 입력창 디자인 */
+.task_modal input {
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+.task_modal textarea {
+	outline: none;
+	border: none;
+	/* background-color: transparent; */
+}
+
+.project_name {
+	display: flex;
+	align-items: center;
+}
+
+/* 누를 수 있는거 */
+.task_modal .project_color,
+.task_modal .project_name,
+.task_modal .cross_icon_w,
+.task_modal .task_name,
+.task_modal .more,
+.task_modal .content>.property>.status>div:not(:nth-child(1)),
+.task_modal .cross_icon_b,
+.task_modal .add_box_mgin,
+.task_modal .update_comment,
+.task_modal .delete_comment,
+.task_modal .more_modal>div>div,
+.task_modal .start_date,
+.task_modal .end_date,
+.task_modal .submit,
+.task_modal .add_responsible_modal_one,
+.task_modal .add_priority_modal_one,
+span.task_detail,
+span.project_detail {
+	cursor: pointer;
+}
+
+/* d-none 처리 */
+.d-none {
+	display: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+.lo {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 3px solid transparent;
+	border-radius: 100%;
+	border-top-color: #ffffff;
+	animation: spin 1s ease-in-out infinite;
+	-webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+	to { -webkit-transform: rotate(360deg); }
+}
+
+.task_modal .detail_title .loading,
+.task_modal .detail_content .loading,
+.task_modal .comment_line .loading
+{
+	display: flex;
+    justify-content: center;
+}
+
+.task_modal .comment_line .loading{
+	margin: 11px 0 20px 122px;
+}
+
+.task_modal .detail_title .loading{
+	margin: 10px 0;
+}
+
+.task_modal .detail_content .loading {
+    margin: 50px 0;
+}
+
+.task_modal .loading span {
+	display: inline-block; /* span 내부요소들을 한줄로 세우기 */
+	width: 10px;
+	height: 10px;
+	background-color: gray;
+	border-radius: 50%;    /* span을 동그랗게 */
+	animation: loading 1s 0s linear infinite;
+	margin-right: 10px;
+	/* 이벤트명  반복시간  딜레이시간  이벤트처리부드럽게  이벤트무한반복*/
+}
+
+.task_modal .loading span:nth-child(1) {  /*loading의 자식 중 첫번째 span*/
+	/*nth-child : 형제 사이에서의 순서*/
+	animation-delay: 0s;
+	background-color: white;
+}
+
+.task_modal .loading span:nth-child(2) {
+	animation-delay: 0.2s;
+	background-color: white;
+}
+
+.task_modal .loading span:nth-child(3) {
+	animation-delay: 0.4s;
+	background-color: white;
+}
+  
+@keyframes loading {        /*loading이라는 keyframe 애니메이션*/
+    0%,                      /* 0, 50, 100은 구간*/
+    100% {
+      opacity: 0;            /* 안보였다가 */
+      transform: scale(0.5); /*transform의 scale로 요소를 확대 또는 축소할 수 있음*/   
+    }
+    50% {
+      opacity: 1;             /* 보였다가 */
+      transform: scale(1.2); /* 1.2배 */
+    }
+  }
+
+.task_modal input[type='date'] {
+	/* // 캘린더 아이콘을 클릭해야만 달력이 보이기 때문에 이 영역 자체를 제어하기 위해 설정  */
+	position: relative;
+	/* padding: 10px; */
+	/* // 배경에 커스텀 아이콘을 넣어주자! x축은 오른쪽에서부터 10px 떨어지게 하고, y축은 가운데 정렬하고, width 35px에 height auto라는 크기를 부여한다. */
+	/* background: url(../../../assets/Calendar.svg) no-repeat right 10px center / 35px auto; */
+}
+
+.task_modal input[type='date']::-webkit-calendar-picker-indicator {
+	position: absolute;
+	/* // 이를 설정하기 위해 사전에 relative를 설정한 것이다. */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	/* // 배경은 투명하게, */
+	color: transparent;
+	/* // 글자도 투명하게! 이 두 설정을 통해 캘린더 아이콘을 사라지게 만든다. */
+	cursor: pointer;
+}
