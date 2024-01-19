@@ -1,7 +1,7 @@
 프리랜서 또는 개인사업자를 위한 프로젝트 관리 도구 <br>
-사이트 바로가기 ▶ http://112.222.157.156:6001
-* 테스트 계정 *
-id : test99@together.com
+사이트 바로가기 ▶ http://112.222.157.156:6001 <br>
+* 테스트 계정 * <br>
+id : test99@together.com <br>
 pw : Password123!
 <hr>
 2·3차 프로젝트 그룹 git ▶ https://github.com/php-Together/project2.git
